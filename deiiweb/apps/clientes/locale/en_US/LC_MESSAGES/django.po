@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-11 20:35+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: apps/clientes/models.py:7 apps/clientes/models.py:89
+msgid "name"
+msgstr ""
+
+#: apps/clientes/models.py:21
+msgid "country"
+msgstr ""
+
+#: apps/clientes/models.py:22
+msgid "countries"
+msgstr ""
+
+#: apps/clientes/models.py:30 apps/clientes/models.py:38
+msgid "province"
+msgstr ""
+
+#: apps/clientes/models.py:31
+msgid "provinces"
+msgstr ""
+
+#: apps/clientes/models.py:41
+msgid "city"
+msgstr ""
+
+#: apps/clientes/models.py:42
+msgid "cities"
+msgstr ""
+
+#: apps/clientes/models.py:50
+msgid "road type"
+msgstr ""
+
+#: apps/clientes/models.py:51
+msgid "road types"
+msgstr ""
+
+#: apps/clientes/models.py:59
+msgid "identifier type"
+msgstr ""
+
+#: apps/clientes/models.py:60
+msgid "identifier types"
+msgstr ""
+
+#: apps/clientes/models.py:63
+msgid "is foreign address"
+msgstr ""
+
+#: apps/clientes/models.py:65
+msgid "road name"
+msgstr ""
+
+#: apps/clientes/models.py:66
+msgid "number"
+msgstr ""
+
+#: apps/clientes/models.py:67
+msgid "character"
+msgstr ""
+
+#: apps/clientes/models.py:68
+msgid "floor"
+msgstr ""
+
+#: apps/clientes/models.py:69
+msgid "door"
+msgstr ""
+
+#: apps/clientes/models.py:70
+msgid "stair"
+msgstr ""
+
+#: apps/clientes/models.py:71
+msgid "postal code"
+msgstr ""
+
+#: apps/clientes/models.py:72
+msgid "landline phone"
+msgstr ""
+
+#: apps/clientes/models.py:73
+msgid "mobile phone"
+msgstr ""
+
+#: apps/clientes/models.py:74
+msgid "email"
+msgstr ""
+
+#: apps/clientes/models.py:75
+msgid "email doble factor"
+msgstr ""
+
+#: apps/clientes/models.py:77
+msgid "region"
+msgstr ""
+
+#: apps/clientes/models.py:78
+msgid "town"
+msgstr ""
+
+#: apps/clientes/models.py:83 apps/clientes/models.py:84
+msgid "contact data"
+msgstr ""
+
+#: apps/clientes/models.py:88
+msgid "identifier"
+msgstr ""
+
+#: apps/clientes/models.py:90
+msgid "first surname"
+msgstr ""
+
+#: apps/clientes/models.py:91
+msgid "second surname"
+msgstr ""
+
+#: apps/clientes/models.py:92
+msgid "gender"
+msgstr ""
+
+#: apps/clientes/models.py:93
+msgid "birth date"
+msgstr ""
+
+#: apps/clientes/models.py:95
+msgid "last login"
+msgstr ""
+
+#: apps/clientes/models.py:97
+msgid "username"
+msgstr ""
+
+#: apps/clientes/models.py:98
+msgid ""
+"Required. 30 characters or fewer. Letters, numbers and @/./+/-/_ characters"
+msgstr ""
+
+#: apps/clientes/models.py:101
+msgid "password"
+msgstr ""
+
+#: apps/clientes/models.py:102
+msgid "discharge date"
+msgstr ""
+
+#: apps/clientes/models.py:105
+msgid "cliente"
+msgstr ""
+
+#: apps/clientes/models.py:106
+msgid "clientes"
+msgstr ""

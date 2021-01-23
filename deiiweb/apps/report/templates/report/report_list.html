@@ -1,0 +1,45 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Plantillas{% endblock %}
+{% block content %}
+<h2>Reportes</h2>
+<div class="btn-group">
+    <a href="{% url 'reports:create' %}" class="btn btn-primary active">
+        <i class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></i> Crear reporte
+    </a>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for report in report_list %}
+            <tr>
+                <td>{{report.name}}</td>
+                {% if request.user.is_staff %}
+                <td> 
+                <div class="btn-group">
+                    <a href="{% url 'reports:update' report.id%}" class="btn btn-primary active">
+                        <i class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></i> Editar
+                    </a>
+                </div>
+                </td>      
+                <td> 
+                    <div class="btn-group">
+                        <a href="{% url 'reports:generate'%}" class="btn btn-primary active">
+                            <i class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></i> Generar
+                        </a>
+                    </div>
+                </td>             
+                
+                {% endif %}
+                
+            </tr>
+        {% endfor %}
+    </tbody>
+
+</table>
+{% endblock %}

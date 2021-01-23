@@ -1,0 +1,9 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Usuarios{% endblock %}
+{% block content %}Usuarios
+{% load render_table from django_tables2 %}
+<h1>Usuarios</h1>
+{{ usuario.username}}, {{ usuario.first_name}}, {{ usuario.last_name}}, {{ usuario.email}}</li>
+    {% render_table table %}
+{% endblock %}

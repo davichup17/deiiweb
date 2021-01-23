@@ -1,0 +1,16 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Plantillas{% endblock %}
+{% block content %}
+      <div class="row mt-3">
+        <div class="col-md-9 mx-auto">
+          <h2 class="section-heading mb-4">{{object.name}}</h2>
+          <div>
+            {{template.name}}
+            {% if request.user.is_staff %}
+              <form action=""></form>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+{% endblock %}

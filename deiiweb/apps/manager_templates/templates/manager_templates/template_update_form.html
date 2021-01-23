@@ -1,0 +1,18 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Actualizar Plantilla{% endblock %}
+{% block content %}
+<script type="text/javascript" src="{% static "ckeditor/ckeditor-init.js" %}"></script>
+<script type="text/javascript" src="{% static "ckeditor/ckeditor/ckeditor.js" %}"></script>
+      <div class="row mt-3">
+        <div class="col-md-9 mx-auto">
+          {% if 'ok' in request.GET %}
+            <p style="color:green">Plantilla editada correctamente</p>
+            <form method="post">{% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Save">
+            </form>
+          {% endif %}
+        </div>
+      </div>
+{% endblock %}

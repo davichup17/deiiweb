@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p style="text-align: center; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0"><img style="width: 65px; height: 65px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Va-dip.svg/250px-Va-dip.svg.png" alt="" /></p>
+<p style="text-align: center; font-family: Times New Roman; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0"><span style="font-size: 17pt;"><span style="color: #880e53; font-size: 17pt;"><span style="font-size: 23pt;">B</span>OLET&Iacute;N <span style="font-size: 23pt;">O</span>FICIAL DE LA <span style="font-size: 23pt;">P</span>ROVINCIA DE <span style="font-size: 23pt;">V</span>ALLADOLID</span></span></p>
+
+<hr style="color: #880e53; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0"/>
+<div style="text-align:left;font-family: Times New Roman; font-size: 10pt; color: #880e53; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0">{{num_bulletin}}
+	<span style="float:right;">{{date_bulletin}}</span>
+</div>
+<hr style="color: #880e53; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0"/>
+
+<p style="text-align: center;"><span style="font-size: 16pt;">{{Seccion|upper}}</span></p>
+<p style="text-align: center;"><strong><span style="font-size: 15pt;">{{Autor|safe|upper}}</span></strong></p>
+<p style="text-align: center;">{% for d in departamento %}{% if forloop.counter0 == 0 %}<span style="font-size: 14pt;"><strong>{{d.razon_social|safe|upper}}</strong></span>{% else %}</p>
+<p style="text-align: center;"><span style="font-size: 13pt;"><strong>{{d.razon_social|safe}}</strong></span>{% endif %}{% endfor %}</p>
+<p>{{anuncio|safe}}</p>
+<p><br /><br /></p>
+<p>{{piefirma|safe}}</p>
+</body>
+<footer style="position: absolute; bottom: 0; width: 100%">
+	<hr style="color: #880e53; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0"/>
+	<div style="text-align:left;font-family: Times New Roman; font-size: 10pt; color: #880e53; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0">https://www.diputaciondevalladolid.es
+		<span style="float:right;">D.L.: N.º: VA-200/2010</span>
+	</div>
+	<hr style="color: #880e53; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0"/>
+</footer>
+</html>

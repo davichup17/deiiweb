@@ -1,0 +1,44 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Plantillas{% endblock %}
+{% block content %}
+<h2>Templates</h2>
+<div class="btn-group" style="padding-bottom: 20px;">
+    <a href="{% url 'templates:create' %}" class="btn btn-primary active">
+        <i class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></i> Crear plantilla
+    </a>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th><p style="padding-top: 15px;">Nombre</p></th>
+            <th><p style="padding-top: 15px;">Acciones</p></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for template in template_list %}
+            <tr>
+                <td><p style="padding-top: 15px;">{{template.name}}</p></td>
+                {% if request.user.is_staff %}
+                <td> 
+                <div class="btn-group">
+                    <a href="{% url 'templates:update' template.id template.name|slugify%}" class="btn btn-primary active">
+                        <i class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></i> Editar
+                    </a>
+                </div>
+                <div class="btn-group">
+                    <a href="{% url 'templates:delete' template.id%}" class="btn btn-danger">
+                        <i class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></i> Borrar
+                    </a>
+                </div>
+                </td>               
+                
+                {% endif %}
+                
+            </tr>
+        {% endfor %}
+    </tbody>
+
+</table>
+{% endblock %}
